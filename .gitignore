@@ -13,6 +13,10 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+.idea
+wp-admin
+wp-includes
+license.txt
 
 *
 
@@ -22,7 +26,6 @@ xmlrpc.php
 !package.json
 !webpack.mix.js
 
-wp-
 !wp-content
 wp-content/*
 !wp-content/themes
