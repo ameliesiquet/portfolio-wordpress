@@ -13,28 +13,37 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
-.idea
-wp-admin
-wp-includes
+
+# Ignoriere .idea Verzeichnis und andere spezifische Verzeichnisse
+.idea/
+wp-admin/
+wp-includes/
 license.txt
 
+# Ignoriere alles standardmäßig
 *
 
+# Aber nicht diese spezifischen Dateien
 !.gitignore
-
 !README.md
 !package.json
 !webpack.mix.js
 
-!wp-content
+# Behalte den wp-content Ordner und seinen Inhalt
+!wp-content/
 wp-content/*
-!wp-content/themes
+
+# Behalte den themes Ordner und seinen Inhalt
+!wp-content/themes/
 wp-content/themes/*
-!wp-content/themes/portfolio
-wp-content/themes/portfolio/*
-!wp-content/themes/portfolio/public
+
+# Behalte den portfolio Ordner und seinen Inhalt
+!wp-content/themes/portfolio/
+!wp-content/themes/portfolio/**
+!wp-content/themes/portfolio/ressources/
 wp-content/themes/portfolio/public/*
 
-node_modules/
-package-lock.json
+# Ignoriere nur die Ordner innerhalb des portfolio Verzeichnisses, nicht die Dateien
+wp-content/themes/portfolio/*/
+
 
