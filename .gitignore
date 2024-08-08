@@ -46,4 +46,9 @@ wp-content/themes/portfolio/public/*
 # Ignoriere nur die Ordner innerhalb des portfolio Verzeichnisses, nicht die Dateien
 wp-content/themes/portfolio/*/
 
+# Ignoriere die Ordner ai1wm-backups, languages und plugins
+wp-content/ai1wm-backups/
+wp-content/languages/
+wp-content/plugins/
+
 
