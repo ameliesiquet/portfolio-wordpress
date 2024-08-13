@@ -8,11 +8,11 @@
             <p>We place great importance on protecting your personal data. Our commitment is reflected in our confidential handling of this data and its use strictly within the scope of its initial collection. Please note that your data may be stored in our databases and will not be disclosed to third parties without your explicit consent. Additionally, you have the right to request access to, correction of, or deletion of your data at any time.</p>
             <article class="privacy-policy__card">
                 <h3 role="heading" aria-level="3">Identity</h3>
-                <p>Requena Sam<br> 4860, Pepinster<br> Belgium</p>
+                <p>Siquet Amélie <br> 4750, Bütgenbach<br> Belgium</p>
             </article>
             <article class="privacy-policy__card">
                 <h3 role="heading" aria-level="3">Contact</h3>
-                <p>You can contact us at:<br> Phone: +32 (0)472 86 02 18<br>Email: <a href="mailto:samrequena15@gmail.com">samrequena15@gmail.com</a></p>
+                <p>You can contact us at:<br> Phone: +32 (0)475 642 367<br>Email: <a href="mailto:ameliesiquetgmail.com">ameliesiquetgmail.com</a></p>
             </article>
             <article class="privacy-policy__card">
                 <h3 role="heading" aria-level="3">Hosting</h3>

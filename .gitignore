@@ -37,14 +37,17 @@ wp-content/*
 !wp-content/themes/
 wp-content/themes/*
 
+
 # Behalte den portfolio Ordner und seinen Inhalt
 !wp-content/themes/portfolio/
-!wp-content/themes/portfolio/**
-!wp-content/themes/portfolio/ressources/
-wp-content/themes/portfolio/public/*
 
-# Ignoriere nur die Ordner innerhalb des portfolio Verzeichnisses, nicht die Dateien
 wp-content/themes/portfolio/*/
+!wp-content/themes/portfolio/ressources/
+!wp-content/themes/portfolio/ressources/**
+!wp-content/themes/portfolio/components/
+!wp-content/themes/portfolio/components/*
+
+
 
 # Ignoriere die Ordner ai1wm-backups, languages und plugins
 wp-content/ai1wm-backups/

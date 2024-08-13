@@ -36,7 +36,7 @@
     </p>
 </noscript>
 <header role="banner">
-    <h1 class="hidden" role="heading" aria-level="1">Portfolio -
+    <h1 class="visually_hidden" role="heading" aria-level="1">Portfolio -
         <span itemprop="name">Amélie</span>
         <span itemprop="familyName">Siquet</span> -
         <span itemprop="jobTitle">Web Developer</span>

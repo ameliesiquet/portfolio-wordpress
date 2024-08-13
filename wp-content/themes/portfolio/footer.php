@@ -1,15 +1,14 @@
 <footer role="contentinfo" tabindex="0" class="footer" id="footer">
     <h2 role="heading" aria-level="2" class="visually-hidden">Amélie Siquet</h2>
-    <hr data-animation="showUp"><!--Barre de séparation-->
     <section class="footer__container">
         <div class="footer__container__contact">
             <h3 role="heading" aria-level="3">Contact</h3>
-            <ul role="list" class="footer__contact__list">
+            <ul role="list" class="footer__container__contact__list">
                 <li>
-                    <a title="Send a mail to Amélie Siquet" href="mailto:ameliesiquet@gmail.com">Email</a>
+                    <a title="Send a mail to Amélie Siquet" href="mailto:ameliesiquet@gmail.com">ameliesiquet@gmail.com</a>
                 </li>
                 <li>
-                    <a title="Call Amélie Siquet" href="tel:+32475642367">Téléphone</a>
+                    <a title="Call Amélie Siquet" href="tel:+32475642367">+32 475 642 367</a>
                 </li>
             </ul>
         </div>
@@ -17,7 +16,7 @@
         </div>
         <div class="footer__container__social">
             <h3 role="heading" aria-level="3">Socials</h3>
-            <ul role="list" id="social">
+            <ul role="list" id="social" class="footer__container__social__list">
                 <?php
                 $social_post_id = 50;
 
@@ -43,10 +42,9 @@
             </ul>
         </div>
     </section>
-    <hr data-animation="showUp"><!--Barre de séparation-->
     <div data-animation="showUp" class="footer__bottom">
         <p>© 2024 Amélie Siquet - All rights reserved</p>
-        <a href="<?= get_field('footer-confi-link', 'options'); ?>" title="Go to the terms of use page">Terms of use</a>
+        <a href="http://portfolio_wordpress.test/privacy-policy/" title="Go to the privacy policy page">Terms of use</a>
     </div>
 </footer>
 <script type="module" src="<?= dw_asset('js/site.js') ?>" defer></script>

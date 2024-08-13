@@ -120,5 +120,10 @@ function capitaine_file_types($types, $file, $filename, $mimes)
     return $types;
 }
 
+function dw_is_active(string $path): string
+{
+    return wp_get_canonical_url() === $path ? 'active' : '';
+}
+
 
 

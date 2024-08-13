@@ -1,0 +1,69 @@
+@import "reset";
+@import "helpers";
+@import "fonts";
+
+@import "partials/burger";
+@import "partials/recent-projects";
+/*PAGES*/
+@import "pages/home/hero";
+@import "pages/about_me/hero";
+/*COMPONENTS*/
+@import "components/header";
+@import "components/footer";
+
+
+body {
+  background-image: url("/wp-content/themes/portfolio/ressources/img/background.png");
+}
+
+/* CSS danach ändern, alles nur zur übersichr !!*/
+
+h2 {
+  color: #778672;
+  text-align: center;
+  font-family: "Vogue", sans-serif;
+  font-size: 100px;
+  margin: 40px auto;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(to right, #778672 0%,  #D9ECD3 100%);
+    width: 30%;
+    top: 26%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  &:after {
+    left: auto;
+    right: 0;
+    background: linear-gradient(to right, #D9ECD3 0%, #778672 100%);
+  }
+}
+
+
+
+
+.footer__container__social li {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__container__social img {
+  max-width: 100%; /* Damit das Bild den Container ausfüllt */
+  height: auto;
+}
+
+
+/* ABOUT*/
+
+.skills__block{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.skills__block__item img{
+  max-width: 100px;
+}
