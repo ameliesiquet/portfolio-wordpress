@@ -7,6 +7,10 @@
 /*PAGES*/
 @import "pages/home/hero";
 @import "pages/about_me/hero";
+@import "pages/about_me/skills";
+@import "pages/about_me/formation";
+@import "pages/contact/content";
+@import "pages/contact/form";
 /*COMPONENTS*/
 @import "components/header";
 @import "components/footer";
@@ -14,6 +18,7 @@
 
 body {
   background-image: url("/wp-content/themes/portfolio/ressources/img/background.png");
+  font-family: "Louis George Cafe", sans-serif;
 }
 
 /* CSS danach ändern, alles nur zur übersichr !!*/
@@ -43,7 +48,20 @@ h2 {
   }
 }
 
+.cta{
+  background-color: #232322;
+  margin: auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
 
+  &__btn{
+    color: #FFFFF3;
+    background-color: #778672;
+    padding: 15px 65px;
+    border-radius: 5px;
+  }
+}
 
 
 .footer__container__social li {
@@ -56,14 +74,3 @@ h2 {
   height: auto;
 }
 
-
-/* ABOUT*/
-
-.skills__block{
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
-.skills__block__item img{
-  max-width: 100px;
-}

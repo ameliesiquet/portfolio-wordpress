@@ -1,0 +1,25 @@
+.skills{
+  h2{
+    font-size: 90px;
+    margin: 140px 0 100px;
+
+    ::before{
+      top: 127%;
+    }
+  }
+  &__block{
+    background-color: #232322;
+    padding: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+
+    &__item{
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

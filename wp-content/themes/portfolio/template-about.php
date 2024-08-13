@@ -7,13 +7,15 @@
             <h2><?= get_field('about_title'); ?></h2>
             <article class="about-me">
                 <h3><?= get_field('about_me_title'); ?></h3>
-                <div class="my-career">
-                    <h4><?= get_field('career_title'); ?></h4>
-                    <p><?= get_field('career_content'); ?></p>
-                </div>
-                <div class="my-vision">
-                    <h4><?= get_field('vision_title'); ?></h4>
-                    <p><?= get_field('vision_content'); ?></p>
+                <div class="about-me__content">
+                    <div class="my-career">
+                        <h4><?= get_field('career_title'); ?></h4>
+                        <p><?= get_field('career_content'); ?></p>
+                    </div>
+                    <div class="my-vision">
+                        <h4><?= get_field('vision_title'); ?></h4>
+                        <p><?= get_field('vision_content'); ?></p>
+                    </div>
                 </div>
                 <?php $image = get_field('about_image');
                 if ($image): ?>
@@ -26,7 +28,7 @@
         <?php get_template_part('home/skills') ?>
         <section class="formation">
             <h2 role="heading" aria-level="2" class="formation__title">
-                MY FORMATION
+                My formation
             </h2>
             <div class="formation__container">
                 <?php
@@ -38,17 +40,18 @@
                 if ($formation_query->have_posts()) :
                     while ($formation_query->have_posts()) : $formation_query->the_post();
                         $year = get_field('year');
-                        $title = get_field('title');
+                        $name = get_field('name');
                         $desc = get_field('description');
                         ?>
-                        <div data-animation="showUp" class="formation__container__item" itemscope
+                        <div class="formation__container__item" itemscope
                              itemtype="https://schema.org/Organization">
                             <h3 class="formation__container__item__year" role="heading" aria-level="3"
                                 itemprop="name">
                                 <?= $year; ?>
                             </h3>
+                            <hr>
                             <span class="formation__container__item__title">
-                                 <?= $title; ?>
+                                 <?= $name; ?>
                             </span>
                             <p class="formation__container__item__desc" itemprop="description">
                                 <?= $desc; ?>

@@ -1,0 +1,38 @@
+.contact{
+  h2{
+    padding: 30px;
+    margin: 0;
+    background-color: #232322;
+    color: #D9ECD3;
+  }
+  &__container{
+    font-family: "Louis George Cafe", sans-serif;
+    color: #232322;
+    padding: 120px 100px;
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: 3fr 5fr;
+    &__content{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      h3{
+        font-family: "Vogue", sans-serif;
+        font-size: 90px;
+      }
+      p{
+        font-size: 23px;
+      }
+      a{
+        color: #232322;
+      }
+      &__way{
+        p{
+          font-family: "Vogue", sans-serif;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+}
