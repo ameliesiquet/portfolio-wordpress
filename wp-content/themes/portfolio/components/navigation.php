@@ -18,12 +18,9 @@
                 while ($nav->have_posts()) : $nav->the_post();
                     $title = get_field('title');
                     $link = get_field('link');
-
-                    // Check if the current page URL matches the link URL
-                    $active_class = (strpos($_SERVER['REQUEST_URI'], parse_url($link, PHP_URL_PATH)) !== false) ? 'active' : '';
                     ?>
-                    <li class="<?= $active_class; ?>">
-                        <a href="<?= esc_url($link); ?>" title="<?= esc_attr($title); ?>">
+                    <li >
+                        <a href="<?= esc_url($link); ?>" title="<?= esc_attr($title); ?>" class="<?=dw_is_active($link);?>">
                             <?= esc_html($title); ?>
                         </a>
                     </li>

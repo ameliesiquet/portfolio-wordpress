@@ -9,6 +9,11 @@
     color: #D9ECD3;
     font-size: 100px;
     text-align: left;
+
+    &:before,
+    &:after {
+      height: 0px;
+    }
   }
 
   a, p {
@@ -31,14 +36,26 @@
       left: -120px; // Startet ganz links
       background: linear-gradient(to right, #778672 0%, #D9ECD3 50%, #778672 100%); // Gradient-Farbverlauf
     }
+
     &:before {
-      top: 20px; // Linie oben
-    }
-    &:after {
-      bottom: 30px; // Linie unten
+      top: -10%; // Linie oben
     }
 
-    &__contact, &__social{
+    &:after {
+      bottom: 10%; // Linie unten
+    }
+    &__social {
+      li {
+        width: 30px;
+        height: 30px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    &__contact, &__social {
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -49,20 +66,23 @@
         color: #FFFFF3;
       }
 
-      &__list{
+      &__list {
         display: flex;
         gap: 13px;
       }
     }
+
     &__contact {
-      &__list{
+      &__list {
         flex-direction: column;
       }
     }
   }
-  &__bottom{
+
+  &__bottom {
     display: flex;
     justify-content: space-between;
   }
+
 
 }

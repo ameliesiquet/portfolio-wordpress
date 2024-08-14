@@ -4,6 +4,10 @@
     margin: 0;
     background-color: #232322;
     color: #D9ECD3;
+    &:before,
+    &:after {
+      width: 32%;
+    }
   }
   &__container{
     font-family: "Louis George Cafe", sans-serif;

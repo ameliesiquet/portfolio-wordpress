@@ -1,71 +1,109 @@
-.recent{
-  h2{
-    font-size: 90px;
-    margin: 100px 0;
-    color: #778672;
-
-    &:before,
-    &:after {
-      width: 25%;
-      top: 156%;
-    }
-  }
-
-  .recent__container{
-    background-color: #232322;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(2, 1fr); // Zwei Spalten
-    padding: 30px 90px;
-    position: relative;
-
-    &:before,
-    &:after {
-      content: '';
-      position: absolute;
-      width: 100vw; // Volle Breite der Ansicht
-      height: 2px;
-      left: 0; // Startet ganz links
-      background: linear-gradient(to right, #778672 0%, #D9ECD3 50%, #778672 100%); // Gradient-Farbverlauf
+.home, .my-projects {
+  .recent {
+    h2 {
+      color: #778672;
     }
 
-    &:before {
-      top: 30px; // Linie oben
-    }
+    .recent__container {
+      background-color: #232322;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr); // Zwei Spalten
+      padding: 30px 90px;
+      position: relative;
 
-    &:after {
-      bottom: 30px; // Linie unten
-    }
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100vw; // Volle Breite der Ansicht
+        height: 2px;
+        left: 0; // Startet ganz links
+        background: linear-gradient(to right, #778672 0%, #D9ECD3 50%, #778672 100%); // Gradient-Farbverlauf
+      }
 
-    &__card{
-      display: flex;
-      flex-direction: column;
+      &:before {
+        top: 30px; // Linie oben
+      }
 
+      &:after {
+        bottom: 30px; // Linie unten
+      }
 
-      a{
-        position: relative;
-        border: 1px solid #778672; // Grüne Umrandung
-        padding: 30px;
+      &__card {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
 
-        h3 {
-          font-family: "Louis George Cafe", serif;
-          color: #FFFFF3;
-          font-size: 1.5rem;
-          text-transform: uppercase;
+        a {
+          position: relative;
+          border: 1px solid #778672; // Grüne Umrandung
+          padding: 45px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+
+          h3 {
+            font-family: "Louis George Cafe", serif;
+            color: #FFFFF3;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+          }
+
+          img {
+            min-width: 75%;
+            border-radius: 10px;
+            min-height: 300px;
+          }
+
+          &__img {
+            padding: 40px 40px 70px 40px;
+          }
         }
 
-        img {
-          min-width: 75%;
-          border-radius: 10px;
-          min-height: 300px;
+        a:nth-child(1) {
+          padding: 5px;
         }
-        &__img{
-          padding: 40px 40px 70px 40px;
+      }
+    }
+  }
+}
+
+.home {
+  .recent {
+    h2 {
+      font-size: 90px;
+      margin: 100px 0;
+
+      &:before,
+      &:after {
+        width: 25%;
+      }
+    }
+  }
+}
+
+.my-projects {
+  .recent {
+    h2 {
+      font-size: 100px;
+      margin: 40px 0;
+
+      &:before,
+      &:after {
+        width: 30%;
+      }
+    }
+
+    .recent__container {
+      &__card {
+        a {
+          padding: 30px;
+        }
+
+        a:nth-child(1) {
+          padding: 30px;
         }
       }
     }

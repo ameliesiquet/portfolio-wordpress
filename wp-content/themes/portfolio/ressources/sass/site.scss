@@ -21,14 +21,13 @@ body {
   font-family: "Louis George Cafe", sans-serif;
 }
 
-/* CSS danach ändern, alles nur zur übersichr !!*/
-
 h2 {
   color: #778672;
   text-align: center;
   font-family: "Vogue", sans-serif;
   font-size: 100px;
   margin: 40px auto;
+  position: relative;
 
   &:before,
   &:after {
@@ -37,10 +36,11 @@ h2 {
     height: 2px;
     background: linear-gradient(to right, #778672 0%,  #D9ECD3 100%);
     width: 30%;
-    top: 26%;
+    top: 50%;
     left: 0;
     transform: translateY(-50%);
   }
+
   &:after {
     left: auto;
     right: 0;
@@ -63,14 +63,4 @@ h2 {
   }
 }
 
-
-.footer__container__social li {
-  width: 30px;
-  height: 30px;
-}
-
-.footer__container__social img {
-  max-width: 100%; /* Damit das Bild den Container ausfüllt */
-  height: auto;
-}
 

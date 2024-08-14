@@ -31,13 +31,12 @@ header{
 .burger-menu__list li:hover, .burger-menu__list li:focus {
   background-color: #D9ECD3;
 }
-
 .burger-menu__list li:hover a{
   color: #0c0c0c;
 }
-.burger-menu__list li:active a {
+.burger-menu__list li a.active {
   text-decoration: underline;
 }
-.burger-menu__list li:active {
+.burger-menu__list li a.active{
   background-color: #D9ECD3;
 }
