@@ -1,51 +1,131 @@
-.contact__form{
-  background-color: #232322;
+@import "../../global/variables";
+
+.contact__form {
+  background-color: $dark-grey;
   text-align: center;
-  color: #FFFFF3;
+  color: $off-white;
   display: flex;
   flex-direction: column;
-  gap: 45px;
-  border-radius: 20px;
-  padding: 50px 120px;
-  h3{
+  gap: 2.5em;
+  border-radius: 1.11em;
+  padding: 2.78em 1.67em;
+  align-self: center;
+
+  h3 {
     font-family: "Vogue", sans-serif;
-    font-size: 60px;
+    font-size: 1.67em;
   }
-  &__form{
-    fieldset{
+
+  &__form {
+    fieldset {
       display: flex;
       flex-direction: column;
-      gap: 50px;
+      gap: 1.67em;
     }
-    &__name{
+
+    &__name {
       display: flex;
       flex-direction: row;
-      gap: 20px;
+      gap: 1.11em;
     }
-    div{
+
+    div {
       display: flex;
       flex-direction: column;
       text-align: left;
-      gap: 15px;
+      align-self: center;
+      gap: 0.83em;
+      width: 100%;
     }
 
-    label{
+    label {
       font-family: "Vogue", sans-serif;
-      font-size: 25px;
+      font-size: 1em;
     }
-    input, textarea{
+
+    input, textarea {
       font-family: "Louis George Cafe Light", sans-serif;
-      font-size: 18px;
-      color: #FFFFF3;
-      background-color: #232322;
-      border: 1px solid #FFFFF3;
-      border-radius: 5px;
-      padding: 15px ;
+      font-size: 0.78em;
+      color: $off-white;
+      background-color: $dark-grey;
+      border: 1px solid $off-white;
+      border-radius: 0.28em;
+      padding: 0.56em;
     }
-    .cta__btn{
+
+    .cta__btn {
       border: none;
       max-width: 40%;
       margin: auto;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .contact__form {
+    gap: 1.67em;
+    border-radius: 1.11em;
+    padding: 2.78em 3.33em;
+
+    h3 {
+      font-size: 1.67em;
+    }
+
+    &__form {
+      fieldset {
+        gap: 1.11em;
+      }
+
+      &__name {
+        gap: 1.11em;
+      }
+
+      div {
+        gap: 0.83em;
+      }
+
+      label {
+        font-size: 1em;
+      }
+
+      input, textarea {
+        font-size: 0.67em;
+        padding: 0.56em;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact__form {
+    gap: 3.06em;
+    padding: 2.78em 4.44em;
+
+    h3 {
+      font-size: 2.5em;
+    }
+
+    &__form {
+      fieldset {
+        gap: 2.5em;
+      }
+
+      &__name {
+        gap: 1.11em;
+      }
+
+      div {
+        gap: 1.67em;
+      }
+
+      label {
+        font-size: 1.39em;
+      }
+
+      input, textarea {
+        font-size: 1em;
+        padding: 0.83em;
+      }
     }
   }
 }

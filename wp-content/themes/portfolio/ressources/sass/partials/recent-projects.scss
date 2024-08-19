@@ -1,34 +1,17 @@
+@import "../global/variables";
+
 .home, .my-projects {
   .recent {
     h2 {
-      color: #778672;
+      color: $olive-green;
     }
 
     .recent__container {
-      background-color: #232322;
-      display: grid;
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: repeat(2, 1fr); // Zwei Spalten
-      padding: 30px 90px;
+      background-color: $dark-grey;
+      display: flex;
+      flex-direction: column;
+      padding: 1.6667em 2.5em 0;
       position: relative;
-
-      &:before,
-      &:after {
-        content: '';
-        position: absolute;
-        width: 100vw; // Volle Breite der Ansicht
-        height: 2px;
-        left: 0; // Startet ganz links
-        background: linear-gradient(to right, #778672 0%, #D9ECD3 50%, #778672 100%); // Gradient-Farbverlauf
-      }
-
-      &:before {
-        top: 30px; // Linie oben
-      }
-
-      &:after {
-        bottom: 30px; // Linie unten
-      }
 
       &__card {
         display: flex;
@@ -36,8 +19,8 @@
 
         a {
           position: relative;
-          border: 1px solid #778672; // Grüne Umrandung
-          padding: 45px;
+          border: 0.0625em solid $olive-green;
+          padding: 1.6667em;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -46,24 +29,31 @@
 
           h3 {
             font-family: "Louis George Cafe", serif;
-            color: #FFFFF3;
-            font-size: 1.5rem;
+            color: $off-white;
+            font-size: 1em;
             text-transform: uppercase;
           }
 
           img {
-            min-width: 75%;
-            border-radius: 10px;
-            min-height: 300px;
+            min-width: 100%;
+            border-radius: 0.2778em;
+            min-height: 100%;
+            transition: transform 0.5s ease-in-out;
           }
 
           &__img {
-            padding: 40px 40px 70px 40px;
+            padding: 2.2222em 2.2222em 3.8889em 2.2222em;
           }
         }
 
         a:nth-child(1) {
-          padding: 5px;
+          padding: 0.8333em;
+        }
+
+        &:hover {
+          img {
+            transform: scale(0.95);
+          }
         }
       }
     }
@@ -73,12 +63,12 @@
 .home {
   .recent {
     h2 {
-      font-size: 90px;
-      margin: 100px 0;
+      font-size: 1.9444em;
+      margin: 1.1111em 0;
 
       &:before,
       &:after {
-        width: 25%;
+        width: 20%;
       }
     }
   }
@@ -87,23 +77,203 @@
 .my-projects {
   .recent {
     h2 {
-      font-size: 100px;
-      margin: 40px 0;
+      font-size: 2.7778em;
+      margin: 1.1111em 0;
 
       &:before,
       &:after {
-        width: 30%;
+        width: 10%;
       }
     }
 
     .recent__container {
+      padding: 1.6667em 2.5em;
+
       &__card {
         a {
-          padding: 30px;
+          padding: 1.6667em;
         }
 
         a:nth-child(1) {
-          padding: 30px;
+          padding: 1.6667em;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .home, .my-projects {
+    .recent {
+      .recent__container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.6667em 5em;
+        position: relative;
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          width: 100vw;
+          height: 0.1111em;
+          left: 0;
+          background: linear-gradient(to right, $olive-green 0%, $mint-green 50%, $olive-green 100%);
+        }
+
+        &:before {
+          top: 1.6667em;
+        }
+
+        &:after {
+          bottom: 1.6667em;
+        }
+
+        &__card {
+          a {
+            padding: 2.5em;
+
+            h3 {
+              font-size: 1.1111em;
+            }
+
+            img {
+              min-width: 100%;
+              border-radius: 0.2778em;
+              min-height: 100%;
+            }
+
+            &__img {
+              padding: 2.2222em 2.2222em 3.8889em 2.2222em;
+            }
+          }
+
+          a:nth-child(1) {
+            padding: 0.8333em;
+          }
+        }
+      }
+    }
+  }
+
+  .home {
+    .recent {
+      h2 {
+        font-size: 2.5em;
+        margin: 1em 0;
+      }
+    }
+  }
+
+  .my-projects {
+    .recent {
+      h2 {
+        font-size: 4.44em;
+        margin: 0.5em 0;
+
+        &:before,
+        &:after {
+          width: 24%;
+        }
+      }
+
+      .recent__container {
+        &__card {
+          a {
+            padding: 1.6667em;
+          }
+
+          a:nth-child(1) {
+            padding: 0.8333em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .home, .my-projects {
+    .recent {
+      .recent__container {
+        padding: 1.6667em 5em;
+
+        &:before,
+        &:after {
+          width: 100vw;
+          height: 0.1111em;
+          left: 0;
+        }
+
+        &:before {
+          top: 1.6667em;
+        }
+
+        &:after {
+          bottom: 1.6667em;
+        }
+
+        &__card {
+          a {
+            padding: 2.5em;
+
+            h3 {
+              font-size: 1.5em;
+            }
+
+            img {
+              border-radius: 0.5556em;
+            }
+
+            &__img {
+              padding: 2.2222em 2.2222em 3.8889em 2.2222em;
+            }
+          }
+
+          a:nth-child(1) {
+            padding: 0.8333em;
+          }
+        }
+      }
+    }
+  }
+
+  .home {
+    .recent {
+      h2 {
+        font-size: 5em;
+        margin: 1em 0;
+
+        &:before,
+        &:after {
+          width: 20%;
+        }
+      }
+    }
+  }
+
+  .my-projects {
+    .recent {
+      h2 {
+        font-size: 5em;
+        margin: 1em 0;
+
+        &:before,
+        &:after {
+          width: 25%;
+        }
+      }
+
+      .recent__container {
+        &__card {
+          a {
+            padding: 1.6667em;
+          }
+
+          a:nth-child(1) {
+            padding: 1.6667em;
+          }
         }
       }
     }

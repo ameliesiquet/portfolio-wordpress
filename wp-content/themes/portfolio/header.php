@@ -1,31 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr-BE">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <!-- Meta donnée du site -->
     <meta name="author" content="<?= get_bloginfo('name'); ?>">
     <meta name="title" content="Amélie Siquet">
     <meta name="keywords"
           content="Portfolio, Amélie Siquet,Webdesign, web, design, development, HEPL">
     <meta name="description"
           content="Portfolio of Amélie Siquet, Web Developer at HEPL. I transform your creative visions into reality!">
-
-    <!-- Profil details -->
     <meta property="profile:first_name" content="Amélie">
     <meta property="profile:last_name" content="Siquet">
-    <!-- Link css -->
     <link rel="stylesheet" href="<?= dw_asset('css/site.css') ?>">
-
-    <!-- Meta details -->
-
-
-    <!-- Title -->
-    <title>
-        Amélie Siquet - Web Developer
-    </title>
+    <title>Amélie Siquet - Web Developer</title>
 </head>
 <body itemscope itemtype="https://schema.org/Person">
 <noscript>

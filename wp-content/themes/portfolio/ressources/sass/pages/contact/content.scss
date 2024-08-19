@@ -1,42 +1,106 @@
-.contact{
-  h2{
-    padding: 30px;
+@import "../../global/variables";
+.contact {
+  h2 {
+    padding: 0.67em;
     margin: 0;
-    background-color: #232322;
-    color: #D9ECD3;
-    &:before,
-    &:after {
-      width: 32%;
-    }
+    color: $olive-green;
   }
-  &__container{
+
+  &__container {
     font-family: "Louis George Cafe", sans-serif;
-    color: #232322;
-    padding: 120px 100px;
-    display: grid;
-    grid-gap: 100px;
-    grid-template-columns: 3fr 5fr;
-    &__content{
+    color: $dark-grey;
+    padding: 0 2.22em;
+    display: flex;
+    flex-direction: column;
+    gap: 2.78em;
+
+    &__content {
       display: flex;
       flex-direction: column;
-      gap: 50px;
-      h3{
+      gap: 1.11em;
+      text-align: center;
+
+      h3 {
         font-family: "Vogue", sans-serif;
-        font-size: 90px;
+        font-size: 1.67em;
       }
-      p{
-        font-size: 23px;
+
+      p {
+        font-size: 0.72em;
       }
-      a{
-        color: #232322;
+
+      a {
+        font-size: 0.72em;
+        color: $dark-grey;
       }
-      &__way{
-        p{
+
+      &__way {
+        display: flex;
+        flex-direction: column;
+        gap: 0.56em;
+
+        p {
           font-family: "Vogue", sans-serif;
-          font-size: 30px;
+          font-size: 1.11em;
         }
       }
     }
   }
+}
 
+@media (min-width: 800px) {
+  .contact {
+    h2 {
+      background-color: $dark-grey;
+      color: $mint-green;
+
+      &::before,
+      &::after {
+        width: 28%;
+      }
+    }
+
+    &__container {
+      padding: 3.33em 2.78em;
+      display: grid;
+      grid-gap: 5.56em;
+      grid-template-columns: 3fr 5fr;
+
+      &__content {
+        gap: 3.89em;
+        text-align: left;
+
+        h3 {
+          font-size: 2.5em;
+        }
+
+        p {
+          font-size: 1em;
+          line-height: 1.22em;
+        }
+
+        &__way {
+          p {
+            font-size: 1.67em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    &__container {
+      padding: 3.33em 2.78em;
+      display: grid;
+      grid-gap: 5.56em;
+      grid-template-columns: 3fr 5fr;
+
+      &__content {
+        gap: 3.89em;
+        text-align: left;
+      }
+    }
+  }
 }

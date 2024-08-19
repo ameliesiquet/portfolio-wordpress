@@ -1,50 +1,167 @@
-.about-me{
-  .hero{
-    h2{
-      padding: 30px;
+@import "../../global/variables";
+.about {
+  .hero {
+    h2 {
+      padding: 0.67em;
       margin: 0;
-      background-color: #232322;
-      color: #D9ECD3;
+      color: $olive-green;
     }
-    .about-me{
-      display: grid;
-      grid-template-columns: 3fr 1fr 3fr;
-      grid-template-areas:"img title content";
-      padding: 130px 100px 0;
-      h3{
+    .about-me {
+      padding: 1.67em 2.78em 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.11em;
+
+      h3 {
         font-family: "Southland", serif;
-        font-size: 95px;
-        grid-area: title;
-        transform: rotate(-90deg);
+        font-size: 1.94em;
         min-width: 130%;
-        margin: 95px auto;
-        white-space: nowrap;
+        margin: 0 auto;
       }
-      &__content{
+
+      &__content {
         grid-area: content;
         display: flex;
-        gap: 45px;
+        gap: 1.11em;
         flex-direction: column;
-        h4{
+
+        h4 {
           font-family: "Vogue", sans-serif;
-          font-size: 25px;
+          font-size: 1em;
         }
-        p{
-          font-size: 20px;
-          line-height: 30px;
+
+        p {
+          font-size: 0.78em;
+          line-height: 1.11em;
         }
-        .my-career, .my-vision{
+
+        .my-career, .my-vision {
           display: flex;
-          gap: 10px;
+          gap: 0.28em;
           flex-direction: column;
         }
       }
-      img{
-        grid-area: img;
+
+      img {
         max-width: 100%;
-        outline: 1px green solid;
-        outline-offset: 10px;
+        outline: 0.11em $mint-green solid;
+        outline-offset: 0.39em;
+        order: -1;
       }
     }
   }
 }
+
+@media (min-width: 800px) {
+  .about {
+    .hero {
+      h2 {
+        margin: 0;
+        background-color: $dark-grey;
+        color: $mint-green;
+      }
+      .about-me {
+        display: grid;
+        grid-template-columns: 3fr 1fr 3fr;
+        grid-template-areas: "img title content";
+        padding: 3.89em 2.78em 0;
+
+        h3 {
+          font-size: 2.78em;
+          grid-area: title;
+          transform: rotate(-90deg);
+          min-width: 130%;
+          margin: 0;
+          justify-self: center;
+          align-self: center;
+          white-space: nowrap;
+        }
+
+        &__content {
+          grid-area: content;
+          display: flex;
+          gap: 1.11em;
+          flex-direction: column;
+          justify-content: center;
+
+          h4 {
+            font-size: 1.11em;
+          }
+
+          p {
+            font-size: 0.72em;
+            line-height: 0.89em;
+          }
+        }
+
+        img {
+          grid-area: img;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .about {
+    .hero {
+      .about-me {
+        h3 {
+          font-size: 3.33em;
+          margin: 0;
+          justify-self: center;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    .hero {
+      h2 {
+        padding: 0.67em;
+        margin: 0;
+        background-color: $dark-grey;
+        color: $mint-green;
+      }
+      .about-me {
+        padding: 5.56em 3.89em 0;
+
+        h3 {
+          font-size: 4.44em;
+        }
+
+        &__content {
+          grid-area: content;
+          display: flex;
+          gap: 1.67em;
+          flex-direction: column;
+
+          h4 {
+            font-size: 1.39em;
+          }
+
+          p {
+            font-size: 0.89em;
+            line-height: 1.33em;
+          }
+
+          .my-career, .my-vision {
+            display: flex;
+            gap: 0.56em;
+            flex-direction: column;
+          }
+        }
+
+        img {
+          grid-area: img;
+          outline-offset: 0.56em;
+        }
+      }
+    }
+  }
+}
+

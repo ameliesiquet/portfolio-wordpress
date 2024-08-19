@@ -46,6 +46,8 @@ wp-content/themes/portfolio/*/
 !wp-content/themes/portfolio/ressources/**
 !wp-content/themes/portfolio/components/
 !wp-content/themes/portfolio/components/*
+!wp-content/themes/portfolio/home/
+!wp-content/themes/portfolio/home/*
 
 
 

@@ -1,42 +1,110 @@
-header{
-   background-color: #232322;
-  padding: 35px 0;
+@import "../global/variables";
+
+header {
+  background-color: $dark-grey;
+  padding: 1.67em 0;
 }
 
-#navigation{
-  border: #D9ECD3 1px solid;
+@media (min-width: 800px) {
+  header {
+    padding: 1.56em 0;
+  }
+
+  #navigation {
+    border: $mint-green 0.06em solid;
+  }
+
+  .burger-menu__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger-menu__list li {
+    padding: 0.83em 0;
+    border-left: $mint-green 0.06em solid;
+    min-width: 9.38em;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .burger-menu__list li:last-child {
+    border-right: $mint-green 0.06em solid;
+  }
+
+  .burger-menu__list a {
+    font-size: 0.94em;
+    color: $off-white;
+    padding: 1.11em 1.67em;
+  }
+
+  .burger-menu__list li:hover,
+  .burger-menu__list li:focus {
+    background-color: $mint-green;
+  }
+
+  .burger-menu__list li:hover a {
+    color: $black;
+  }
+
+  .burger-menu__list li a.active {
+    text-decoration: underline;
+  }
+
+  .burger-menu__list li a.active {
+    background-color: $mint-green;
+  }
 }
 
-.burger-menu__list{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.burger-menu__list li{
-  padding: 20px 0;
-  border-left: #D9ECD3 1px solid;
-  min-width: 150px;
-  text-align: center;
-  cursor: pointer;
-}
-.burger-menu__list li:last-child{
-  border-right: #D9ECD3 1px solid;
-}
-.burger-menu__list a{
-  font-size: 1em;
-  color: #F1F3F0;
-  padding: 20px 30px;
-}
-.burger-menu__list li:hover, .burger-menu__list li:focus {
-  background-color: #D9ECD3;
-}
-.burger-menu__list li:hover a{
-  color: #0c0c0c;
-}
-.burger-menu__list li a.active {
-  text-decoration: underline;
-}
-.burger-menu__list li a.active{
-  background-color: #D9ECD3;
+@media (min-width: 1200px) {
+  header {
+    padding: 2.19em 0;
+  }
+
+  #navigation {
+    border: $mint-green 0.06em solid;
+  }
+
+  .burger-menu__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger-menu__list li {
+    padding: 1.11em 0;
+    border-left: $mint-green 0.06em solid;
+    min-width: 9.38em;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .burger-menu__list li:last-child {
+    border-right: $mint-green 0.06em solid;
+  }
+
+  .burger-menu__list a {
+    font-size: 1em;
+    color: $off-white;
+    padding: 1.11em 1.67em;
+  }
+
+  .burger-menu__list li:hover,
+  .burger-menu__list li:focus {
+    background-color: $mint-green;
+  }
+
+  .burger-menu__list li:hover a {
+    color: $black;
+  }
+
+  .burger-menu__list li a.active {
+    text-decoration: underline;
+  }
+
+  .burger-menu__list li a.active {
+    background-color: $mint-green;
+  }
 }

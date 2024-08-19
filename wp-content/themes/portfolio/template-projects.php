@@ -1,7 +1,9 @@
-<?php /* Template Name: My Projects */ ?>
-<?php get_header(); ?>
-<main class="my-projects">
-    <?php get_template_part('home/recent-projects'); ?>
-</main>
-<?php get_footer(); ?>
+<?php
+/*
+Template Name: My Projects Lol
+*/
+?>
+<section class="recent showUp">
+    <p>hello</p>
+</section>
 

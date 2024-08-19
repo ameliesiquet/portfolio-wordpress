@@ -1,20 +1,65 @@
-.skills{
-  h2{
-    font-size: 90px;
-    margin: 140px 0 100px;
+@import "../../global/variables";
+.skills {
+  h2 {
+    font-size: 2.5em;
+    margin: 2.56em 0 1.78em;
   }
-  &__block{
-    background-color: #232322;
-    padding: 140px;
+
+  &__block {
+    background-color: $dark-grey;
+    padding: 2.22em 1.11em;
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 2.78em;
     justify-content: center;
     align-items: center;
 
-    &__item{
-      img{
+    &__item {
+      width: 15%;
+      transition: transform 0.5s ease-in-out;
+
+      img {
         width: 100%;
+      }
+      &:hover{
+        transform: scale(0.95);
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .skills {
+    h2 {
+      font-size: 2.5em;
+    }
+
+    &__block {
+      padding: 3.89em;
+      gap: 2.78em;
+
+      &__item {
+        width: 10%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .skills {
+    h2 {
+      font-size: 5em;
+      margin: 1.78em 0 1.56em;
+    }
+
+    &__block {
+      padding: 5.56em;
+      gap: 4.44em;
+
+      &__item {
+        img {
+          width: 100%;
+        }
       }
     }
   }

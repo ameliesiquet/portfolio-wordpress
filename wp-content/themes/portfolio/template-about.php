@@ -1,9 +1,9 @@
 <?php /* Template Name: About me */ ?>
 <?php get_header(); ?>
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
-    <main class="about-me">
+    <main class="about">
         <h1 class="visually_hidden">Main content</h1>
-        <section class="hero">
+        <section class="hero showUp">
             <h2><?= get_field('about_title'); ?></h2>
             <article class="about-me">
                 <h3><?= get_field('about_me_title'); ?></h3>
