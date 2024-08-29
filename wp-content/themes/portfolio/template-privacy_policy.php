@@ -4,7 +4,7 @@
     <main>
         <h2 role="heading" aria-level="2" class="main_title">Privacy Policy</h2>
         <section class="privacy-policy">
-            <p class="privacy-policy__update">Last updated on: <span><?= get_field('privacy-date'); ?></span></p>
+            <p class="privacy-policy__update">Last updated on: 28.08.2024</span></p>
             <p>We place great importance on protecting your personal data. Our commitment is reflected in our confidential handling of this data and its use strictly within the scope of its initial collection. Please note that your data may be stored in our databases and will not be disclosed to third parties without your explicit consent. Additionally, you have the right to request access to, correction of, or deletion of your data at any time.</p>
             <article class="privacy-policy__card">
                 <h3 role="heading" aria-level="3">Identity</h3>

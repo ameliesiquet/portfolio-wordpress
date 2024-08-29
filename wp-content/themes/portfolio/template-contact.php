@@ -1,9 +1,9 @@
 <?php /* Template Name: Contact*/ ?>
 <?php get_header(); ?>
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
-    <main class="contact">
+    <main class="contact showUp">
         <h2 role="heading" aria-level="2" class="contact_title main_title">Contact</h2>
-        <section class="contact__container showUp">
+        <section class="contact__container">
             <div class="contact__container__content" itemscope itemtype="https://schema.org/Person">
                 <h3>Let's get in touch!</h3>
                 <p>Do you have questions or a project? Feel free to contact me using the form or the information

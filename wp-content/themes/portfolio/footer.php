@@ -13,8 +13,6 @@
                 </li>
             </ul>
         </div>
-        <div class="footer__container__navigation">
-        </div>
         <div class="footer__container__social">
             <h3 role="heading" aria-level="3">Socials</h3>
             <ul role="list" id="social" class="footer__container__social__list">

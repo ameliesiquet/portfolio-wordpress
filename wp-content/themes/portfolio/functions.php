@@ -12,11 +12,11 @@ register_post_type('project', [
     'label' => 'Projects',
     'description' => 'My projects displayed on the website',
     'public' => true,
-    'menu_position' => 5,
+    'menu_position' => 21,
     'menu_icon' => 'dashicons-portfolio',
     'has_archive' => true,
     'rewrite' => [
-        'slug' => 'my-projects',
+        'slug' => 'projects',
     ],
     'supports' => ['title', 'editor', 'thumbnail'],
 ]);
@@ -52,7 +52,7 @@ register_post_type('navigation-list', [
     'menu_icon' => 'dashicons-book',
     'has_archive' => true,
     'rewrite' => [
-        'slug' => 'formation',
+        'slug' => 'navigation',
     ],
     'supports' => ['title', 'editor', 'thumbnail'],
 ]);

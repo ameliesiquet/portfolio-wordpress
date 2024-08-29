@@ -13,6 +13,7 @@
     <meta property="profile:first_name" content="Amélie">
     <meta property="profile:last_name" content="Siquet">
     <link rel="stylesheet" href="<?= dw_asset('css/site.css') ?>">
+    <link rel="icon" type="image/svg" href="ressources/img/MyLogo.svg">
     <title>Amélie Siquet - Web Developer</title>
 </head>
 <body itemscope itemtype="https://schema.org/Person">
