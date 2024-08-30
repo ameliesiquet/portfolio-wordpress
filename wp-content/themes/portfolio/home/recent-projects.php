@@ -40,7 +40,7 @@
     </div>
     <?php if (is_page('home')) : ?>
         <div class="cta">
-            <a class="cta__btn" href="<?= get_post_type_archive_link('my-projects'); ?>"
+            <a class="cta__btn" href="ameliesiquet.com/my-projects"
                title="Link to my projects page">View all</a>
         </div>
     <?php else: ?>

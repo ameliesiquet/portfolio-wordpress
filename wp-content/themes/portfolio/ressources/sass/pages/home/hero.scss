@@ -24,7 +24,7 @@
     &__img {
       max-width: 100%;
       border: 0.06em solid $light-beige;
-      margin: 0 auto;
+      margin: 0 3em;
     }
 
     &__scroll {
@@ -63,6 +63,15 @@
     display: none;
   }
 }
+@media (min-width: 450px) {
+  .home{
+    .me{
+      &__img{
+        margin: 0 5em;
+      }
+    }
+  }
+}
 
 @media (min-width: 800px) {
   .home {
@@ -93,6 +102,7 @@
         min-width: 12.5em;
         border: 0.11em solid $light-beige;
         position: relative;
+
       }
 
       &__scroll {
@@ -220,7 +230,7 @@
     .me {
       h3 {
         font-size: 8em;
-        max-width: 95%;
+        max-width: 75%;
       }
 
       .gradient {
