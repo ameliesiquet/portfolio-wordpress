@@ -2,7 +2,8 @@
 
 Herzlich Willokommen zu meinem Projekt **Portfolio-WordPress**! 🥳
 
-Link zum Projekt : [https://ameliesiquet](https://ameliesiquet.com)
+- Link zum Projekt : [https://ameliesiquet](https://ameliesiquet.com)
+- Link zu meinem Wireframe https://www.figma.com/design/zqSLxNqfLz0dwoJwmHJDlC/Wireframe-Portfolio?node-id=0-1&t=43imuGK1d3RZPnt2-1
 
 ## 📖 Inhaltsverzeichnis
 
